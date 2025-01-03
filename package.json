@@ -1,5 +1,5 @@
 {
-  "name": "mathlive-2",
+  "name": "@gotitinc/mathlive",
   "version": "0.98.6-hf1",
   "description": "A web component for math input",
   "license": "MIT",
