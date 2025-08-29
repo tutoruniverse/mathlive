@@ -47,6 +47,9 @@
   --_selection-color: var(--selection-color, #000);
   --_selection-background-color: var(--selection-background-color, hsl(var(--_hue), 70%, 85%));
 
+  // The color of the placeholder
+  --_custom-placeholder-color: var(--custom-placeholder-color);
+
   // The background color indicating the caret is in a text zone
   --_text-highlight-background-color: var(--highlight-text, hsla(var(--_hue), 40%, 50%, 0.1));
 
@@ -261,6 +264,10 @@ with this style */
 .ML__selection {
   box-sizing: border-box;
   background: var(--_selection-background-color) !important;
+}
+
+.ML__custom-placeholder {
+  color: var(--_custom-placeholder-color);
 }
 
 .ML__contains-caret.ML__close,
