@@ -864,7 +864,7 @@ export function insertSmartFence(
         style,
       });
       // If there is content after the anchor, move it into the `leftright` atom
-      if (atom.lastSibling.type !== 'first') {
+      if (atom.lastSibling?.type !== 'first') {
         const lastSiblingOffset = model.offsetOf(atom.lastSibling);
         const content = model.extractAtoms([model.position, lastSiblingOffset]);
         model.at(model.position).body = content;
